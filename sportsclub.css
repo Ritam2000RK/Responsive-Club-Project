@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  border: border-box;
+  font-family: helvetica;
+}
+
+body {
+  background-color: rgb(221, 147, 221);
+  height: 2000px;
+}
+
+/* Nav Section */
+
+.navbar {
+  height: 70px;
+  width: 100%;
+  background-color: lightblue;
+  align-items: center;
+}
+
+.navbar ul {
+  padding-top: 30px;
+}
+
+.navbar ul li {
+  display: inline-block;
+  padding-right: 40px;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+/* Club Section */
+
+.club-heading {
+  position: relative;
+  background-color: white;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 250px;
+}
+
+.heading {
+  color: black;
+}
+
+/* Club Description */
+
+.club-description {
+  margin-top: 550px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: auto;
+  display: block;
+}
+
+.club-description .content h2 {
+  padding-bottom: 10px;
+}
+
+.club-description .content p {
+  font-size: 1.3rem;
+  padding: 10px 2px;
+}
+
+/* Club Images */
+
+.club-images {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5rem 0;
+}
+
+.images img {
+  height: auto;
+  width: 30%;
+  margin: 1.5%;
+}
+
+/* Quote Section */
+
+.quote-section {
+  height: 300px;
+  width: 100%;
+  background-color: rgb(152, 41, 89);
+  color: rgb(221, 206, 206);
+}
+
+.quote-section .quote h1 {
+  margin: 0 3% auto 1.5%;
+}
+
+.quote-section .quote p {
+  margin: 0 3% auto 1.5%;
+}
+
+.quote h1 {
+  padding-top: 3%;
+  font-size: 2.5rem;
+  font-style: italic;
+}
+
+.quote-section .quote p {
+  padding-top: 1.5%;
+}
+
+/* Restaurent Section  */
+
+.restaurent-images {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5rem 0;
+}
+
+.second-images img {
+  height: auto;
+  width: 30%;
+  margin: 1.5%;
+}
+
+.last-image {
+  margin-bottom: 2rem;
+}
+
+.last-poster img {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: 2% auto;
+}
+
+.last-image h2{
+  text-align: center; 
+  font-size: 2rem;  
+  color: rgb(244, 244, 59);
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 625px) {
+  .navbar {
+    height: auto;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4%;
+  }
+
+  .navbar ul li {
+    padding-bottom: 5px;
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  .club-description {
+    margin-top: 230px;
+  }
+
+  .club-heading {
+    top: 80px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .images img {
+    width: 100%;
+    background-size: auto;
+    margin: 1.5% 0 1.5% 0;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .second-images img {
+    width: 100%;
+    background-size: auto;
+    margin: 1.5% 0 1.5% 0;
+  }
+}
